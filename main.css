@@ -1,0 +1,654 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+
+    --Dark-brown: hsl(25, 47%, 15%);
+    --Medium-brown: hsl(28, 10%, 53%);
+    --Cream: hsl(27, 66%, 92%);
+    --Very-pale-orange: hsl(33, 100%, 98%);
+
+
+    --Soft-red: hsl(10, 79%, 65%);
+    --Cyan: hsl(186, 34%, 60%);
+}
+
+@media (min-width: 1440px) {
+    body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: var(--Cream);
+        font-family: "DM Sans", sans-serif;
+    }
+    .container1{
+        background-color: var(--Soft-red);
+        width: 33%;
+        height: 117px;
+        border-radius: 17px;
+        margin-bottom: 25px;
+        position: relative;
+    }
+    .container1::after{
+        content: '';
+        position: absolute;
+        background-color: black;
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        right: 35px;
+        top: 34px;
+    }
+    .container1::before{
+        content: '';
+        position: absolute;
+        background-color: transparent;
+        border: 1.9px solid white;
+        border-radius: 50%;
+        width: 43px;
+        height: 43px;
+        right: 60px;
+        top: 34px;
+        z-index: 2;
+    }
+
+    .container1 p{
+        font-weight: 400;
+        color: var(--Cream);
+        margin-left: 27px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        font-size: 18px;
+    }
+    .container1 h3{
+        font-weight: 700;
+        color: white;
+        margin-left: 27px;
+        margin-top: 10px;
+        font-size: 31px;
+    }
+
+
+    /*************************************/
+    .container2{
+        border-radius: 17px;
+        width: 33%;
+        height: 65%;
+        background-color: var(--Very-pale-orange);
+    }
+    .container2 h3{
+        margin-left: 27px;
+        font-size: 28px;
+        margin-top: 28px;
+        color: var(--Dark-brown);
+    }
+
+    .container2 .days{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .mon{
+        width: 49px;
+        height: 45px;
+        border-radius: 5px;
+        margin-left: 27px;
+        margin-top: 135px;
+        cursor: pointer;
+    }
+    .tue{
+        width: 49px;
+        height: 104px;
+        border-radius: 5px;
+        margin-left: 17px;
+        margin-top: 77px;
+        cursor: pointer;
+    }
+    .wed{
+        width: 49px;
+        height: 141px;
+        border-radius: 5px;
+        margin-left: 17px;
+        margin-top: 41px;
+        cursor: pointer;
+    }
+    .thuers{
+        width: 49px;
+        height: 92px;
+        border-radius: 5px;
+        margin-left: 17px;
+        margin-top: 89px;
+        cursor: pointer;
+    }
+    .fri,
+    .sun{
+        width: 49px;
+        height: 68px;
+        border-radius: 5px;
+        margin-left: 17px;
+        margin-top: 113px;
+        cursor: pointer;
+    }
+    .sat{
+        width: 49px;
+        height: 119px;
+        border-radius: 5px;
+        margin-left: 17px;
+        margin-top: 63px;
+        cursor: pointer;
+    }
+
+    /**************************************************/
+.sun {
+    background-color: var(--Soft-red);
+    transition: background-color 0.3s;
+}
+
+.sun:hover {
+    background-color: rgba(231, 76, 60, 0.4); 
+}
+.mon {
+    background-color: var(--Soft-red);
+    transition: background-color 0.3s;
+}
+
+.mon:hover {
+    background-color: rgba(231, 76, 60, 0.4); 
+}
+.tue {
+    background-color: var(--Soft-red);
+    transition: background-color 0.3s;
+}
+
+.tue:hover {
+    background-color: rgba(231, 76, 60, 0.4); 
+}
+.thuers {
+    background-color: var(--Soft-red);
+    transition: background-color 0.3s;
+}
+
+.thuers:hover {
+    background-color: rgba(231, 76, 60, 0.4); 
+}
+.fri {
+    background-color: var(--Soft-red);
+    transition: background-color 0.3s;
+}
+
+.fri:hover {
+    background-color: rgba(231, 76, 60, 0.4); 
+}
+.sat {
+    background-color: var(--Soft-red);
+    transition: background-color 0.3s;
+}
+
+.sat:hover {
+    background-color: rgba(231, 76, 60, 0.4); 
+}
+.wed {
+    background-color: var(--Cyan);
+    transition: background-color 0.3s;
+}
+
+.wed:hover {
+    background-color: rgba(56, 183, 191, 0.4); 
+}
+
+    /**************************************************/
+
+    
+    p{
+        color: var(--Medium-brown);
+        font-size: 14px;
+    }
+    .mon p{
+        margin-top: 60px;
+        margin-left: 10px;
+    }
+    .tue p{
+        margin-top: 123px;
+        margin-left: 14px;
+    }
+    .wed p{
+        margin-top: 163px;
+        margin-left: 11px;
+    }
+    .thuers p{
+        margin-top: 108px;
+        margin-left: 13px;
+    }
+    .fri p{
+        margin-top: 88px;
+        margin-left: 15px;
+    }
+    .sat p{
+        margin-top: 135px;
+        margin-left: 15px;
+    }
+    .sun p{
+        margin-top: 88px;
+        margin-left: 13px;
+    }
+
+    hr{
+        outline: none;
+        border: none;
+        background-color: var(--Cream);
+        height: 1px;
+        width: 84%;
+        margin-top: 55px;
+        margin-left: 36px;
+    }
+/******************************************************************/
+    .section-total{
+        display: grid;
+        grid-template-columns: 64% 36%;
+    }
+
+    .col1{
+        grid-column: 1/2;
+    }
+
+    .col1 h2,p{
+        margin-left: 27px;
+    }
+    .col1 p{
+        font-size: 17px;
+    }
+    .col1 h2{
+        font-size: 45px;
+        margin-top: -17px;
+        color: var(--Dark-brown);
+    }
+
+
+    .col2{
+        grid-column: 2/3;
+    }
+    .col2 h4{
+        margin-left: 99px;
+        margin-top: 41px;
+    }
+    .col2  p{
+        font-size: 17px;
+        margin-top: -18px;
+        margin-left: 23px;
+    }
+
+
+    #target{
+        width: 60px;
+        height: 30px;
+        background-color: var(--Dark-brown);
+        border-radius: 5px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+    .mon #target{
+        position: absolute;
+        bottom: 56px;
+        left: 22px;
+    }
+    .tue #target{
+        position: absolute;
+        bottom: 113px;
+        left: 88px;
+    }
+    .wed #target{
+        position: absolute;
+        bottom: 149px;
+        left: 153px;
+    }
+    .thuers #target{
+        position: absolute;
+        bottom: 100px;
+        left: 219px;
+    }
+    .fri #target{
+        position: absolute;
+        bottom: 77px;
+        right: 150px;
+    }
+    .sat #target{
+        position: absolute;
+        bottom: 126px;
+        right: 85px;
+    }
+    .sun #target{
+        position: absolute;
+        bottom: 76px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 375px) {
+    body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: var(--Cream);
+        font-family: "DM Sans", sans-serif;
+    }
+    .container1{
+        background-color: var(--Soft-red);
+        width: 99%;
+        height: 117px;
+        border-radius: 15px;
+        margin-bottom: 25px;
+        position: relative;
+    }
+    .container1::after{
+        content: '';
+        position: absolute;
+        background-color: black;
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        right: 24px;
+        top: 34px;
+    }
+    .container1::before{
+        content: '';
+        position: absolute;
+        background-color: transparent;
+        border: 1.9px solid white;
+        border-radius: 50%;
+        width: 43px;
+        height: 43px;
+        right: 48px;
+        top: 34px;
+        z-index: 2;
+    }
+
+    .container1 p{
+        font-weight: 400;
+        color: var(--Cream);
+        margin-left: 15px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        font-size: 16px;
+    }
+    .container1 h3{
+        font-weight: 700;
+        color: white;
+        margin-left: 15px;
+        margin-top: 10px;
+        font-size: 26px;
+    }
+
+    /***********************************/
+    .container2{
+        border-radius: 17px;
+        width: 99%;
+        height: 63%;
+        background-color: var(--Very-pale-orange);
+    }
+    .container2 h3{
+        margin-left: 15px;
+        font-size: 22px;
+        margin-top: 28px;
+        color: var(--Dark-brown);
+    }
+
+    .container2 .days{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .mon{
+        width: 36px;
+        height: 53px;
+        border-radius: 4px;
+        margin-left: 10px;
+        margin-top: 127px;
+        cursor: pointer;
+    }
+    .tue{
+        width: 36px;
+        height: 104px;
+        border-radius: 4px;
+        margin-left: 9px;
+        margin-top: 77px;
+        cursor: pointer;
+    }
+    .wed{
+        width: 36px;
+        height: 141px;
+        border-radius: 4px;
+        margin-left: 10px;
+        margin-top: 41px;
+        cursor: pointer;
+    }
+    .thuers{
+        width: 36px;
+        height: 92px;
+        border-radius: 4px;
+        margin-left: 10px;
+        margin-top: 89px;
+        cursor: pointer;
+    }
+    .fri,
+    .sun{
+        width: 36px;
+        height: 68px;
+        border-radius: 4px;
+        margin-left: 10px;
+        margin-top: 113px;
+        cursor: pointer;
+    }
+    .sat{
+        width: 36px;
+        height: 119px;
+        border-radius: 4px;
+        margin-left: 10px;
+        margin-top: 63px;
+        cursor: pointer;
+    }
+
+
+    /*****************************************************/
+    .sun {
+        background-color: var(--Soft-red);
+        transition: background-color 0.3s;
+    }
+    
+    .sun:hover {
+        background-color: rgba(231, 76, 60, 0.4); 
+    }
+    .mon {
+        background-color: var(--Soft-red);
+        transition: background-color 0.3s;
+    }
+    
+    .mon:hover {
+        background-color: rgba(231, 76, 60, 0.4); 
+    }
+    .tue {
+        background-color: var(--Soft-red);
+        transition: background-color 0.3s;
+    }
+    
+    .tue:hover {
+        background-color: rgba(231, 76, 60, 0.4); 
+    }
+    .thuers {
+        background-color: var(--Soft-red);
+        transition: background-color 0.3s;
+    }
+    
+    .thuers:hover {
+        background-color: rgba(231, 76, 60, 0.4); 
+    }
+    .fri {
+        background-color: var(--Soft-red);
+        transition: background-color 0.3s;
+    }
+    
+    .fri:hover {
+        background-color: rgba(231, 76, 60, 0.4); 
+    }
+    .sat {
+        background-color: var(--Soft-red);
+        transition: background-color 0.3s;
+    }
+    
+    .sat:hover {
+        background-color: rgba(231, 76, 60, 0.4); 
+    }
+    .wed {
+        background-color: var(--Cyan);
+        transition: background-color 0.3s;
+    }
+    
+    .wed:hover {
+        background-color: rgba(56, 183, 191, 0.4); 
+    }
+    
+
+    /************************************************************/
+    
+    
+    p{
+        color: var(--Medium-brown);
+        font-size: 12px;
+    }
+    .mon p{
+        margin-top: 58px;
+        margin-left: 6px;
+    }
+    .tue p{
+        margin-top: 108px;
+        margin-left: 8px;
+    }
+    .wed p{
+        margin-top: 144px;
+        margin-left: 6px;
+    }
+    .thuers p{
+        margin-top: 96px;
+        margin-left: 7px;
+    }
+    .fri p{
+        margin-top: 71px;
+        margin-left: 12px;
+    }
+    .sat p{
+        margin-top: 120px;
+        margin-left: 9px;
+    }
+    .sun p{
+        margin-top: 70px;
+        margin-left: 8px;
+    }
+
+    hr{
+        outline: none;
+        outline: none;
+        border: none;
+        background-color: var(--Cream);
+        height: 1px;
+        width: 92%;
+        margin-top: 55px;
+        margin-left: 10px;
+    }
+
+
+
+    /******************************************************************/
+    .section-total{
+        display: grid;
+        grid-template-columns: 64% 36%;
+    }
+
+    .col1{
+        grid-column: 1/2;
+    }
+
+    .col1 h2,p{
+        margin-left: 14px;
+    }
+    .col1 p{
+        font-size: 15px;
+    }
+    .col1 h2{
+        font-size: 30px;
+        margin-top: -3px;
+        color: var(--Dark-brown);
+    }
+
+
+    .col2{
+        grid-column: 2/3;
+    }
+    .col2 h4{
+        margin-left: 53px;
+        margin-top: 41px;
+    }
+    .col2  p{
+        font-size: 15px;
+        margin-top: -18px;
+        margin-left: -8px;
+        width: 124px;
+    }
+
+
+    #target{
+        width: 43px;
+        height: 21px;
+        background-color: var(--Dark-brown);
+        border-radius: 4px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+        font-size: 12px;
+    }
+    .mon #target{
+        position: absolute;
+        bottom: 64px;
+        left: 7px;
+    }
+    .tue #target{
+        position: absolute;
+        bottom: 113px;
+        left: 52px;
+    }
+    .wed #target{
+        position: absolute;
+        bottom: 149px;
+        left: 98px;
+    }
+    .thuers #target{
+        position: absolute;
+        bottom: 100px;
+        left: 144px;
+    }
+    .fri #target{
+        position: absolute;
+        bottom: 77px;
+        right: 102px;
+    }
+    .sat #target{
+        position: absolute;
+        bottom: 126px;
+        right: 56px;
+    }
+    .sun #target{
+        position: absolute;
+        bottom: 76px;
+        right: 10px;
+    }
+}
